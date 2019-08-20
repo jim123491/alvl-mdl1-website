@@ -3104,12 +3104,24 @@ label {
   text-align: center;
   text-transform: uppercase; }
 
-#header {
-  background-color: gray;
-  width: 100% !important; }
-
 .header-line {
   background-color: #e9e9e9;
   height: 1px;
   border: 0;
   margin-bottom: 3px; }
+
+#nav-top {
+  min-height: 4rem; }
+
+#eclipse {
+  background: url(../images/image.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -4rem;
+  min-height: 40rem; }
+
+.white-font {
+  color: white; }
+
+#header {
+  width: 100% !important; }

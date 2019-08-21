@@ -6,14 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TravelGram</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://mbunity.com/fonts/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id="header">
         <div class="row justify-content-around align-items-center">
-            <div class="col-3">
+            <div class="col-2">
                 <input type="search" name="top-search" id="top-search" placeholder="Search and hit enter">
                 <label for="top-search"></label>
                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -39,7 +58,7 @@
                     </text>
                 </svg>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <div class="subscribe-button">Subscribe</div>
             </div>
         </div>
@@ -48,20 +67,24 @@
         <nav id="nav-top" class="row justify-content-between align-items-center">
             <div class="col-7">
                 <div class="row justify-content-end">
-                    <a href="">HOME</a>
-                    <a href="">FEATURED</a>
-                    <a href="">BLOGS</a>
-                    <a href="">GALLERY</a>
-                    <a href="">CATEGORIES</a>
-                    <a href="">CONTACT</a>
+                    <a href="" class="nav-top-link">HOME</a>
+                    <a href="" class="nav-top-link">FEATURED</a>
+                    <a href="" class="nav-top-link">BLOGS</a>
+                    <a href="" class="nav-top-link">GALLERY</a>
+                    <a href="" class="nav-top-link">CATEGORIES</a>
+                    <a href="" class="nav-top-link">CONTACT</a>
                 </div>
             </div>
             <div class="col-4">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
+                <a href="https://www.facebook.com/" target="_blank" class="connection"> <i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="connection"> <i class="fab fa-twitter"></i></a>
+                <a href="https://www.google.com/" target="_blank" class="connection"> <i
+                        class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="connection"> <i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" class="connection"> <i
+                        class="fab fa-youtube"></i></a>
             </div>
         </nav>
     </header>
@@ -75,8 +98,10 @@
                     <div class="white-font col-7">FEATURED BLOG</div>
                     <div class="row">
                         <div class="col-1">
-                            <!-- button up -->
-                            <!-- button down -->
+                            <div class="angle-button row align-items-center justify-content-center"><i
+                                    class="fas fa-angle-up "></i></div>
+                            <div class="angle-button row align-items-center justify-content-center"><i
+                                    class="fas fa-angle-down "></i></div>
                         </div>
                         <div class="col-8 row">
                             <div class="white-font col-12">LOST IN SPACE</div>
@@ -85,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="yellow-button col-4"> explore now</div>
+                    <div class="yellow-button col-3"> explore now</div>
                 </div>
             </div>
 

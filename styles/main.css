@@ -3112,9 +3112,12 @@ label {
   min-height: 2rem;
   font-family: "Dosis";
   color: #242929;
-  text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   letter-spacing: 3px; }
 
 .subscribe-button:hover {
@@ -3131,6 +3134,18 @@ label {
 
 .connection:hover {
   font-weight: bolder;
+  color: #ffc908; }
+
+.nav-top-link {
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+  font-family: 'Open sans'; }
+
+.nav-top-link:visited {
+  text-decoration: none; }
+
+.nav-top-link:hover {
   color: #ffc908; }
 
 .header-line {
@@ -3166,11 +3181,18 @@ label {
   color: #e21712; }
 
 .yellow-button {
-  text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   letter-spacing: 0px;
   background-color: #ffc908; }
 
 .white-font {
   color: white; }
+
+#map {
+  height: 28rem;
+  width: 100%; }

@@ -3,9 +3,12 @@
 $lettSpace: 3px;
 
 @mixin button ($lettSpace){
-    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
     letter-spacing: $lettSpace;
 }
 
@@ -49,7 +52,6 @@ label {
     color: black;
     font-weight: bolder;
     border: 3px solid black;
-    // background-color: rgb(36, 41, 41);
 }
 
 .subscribe-button:active {
@@ -63,7 +65,22 @@ label {
 
 .connection:hover {
     font-weight: bolder;
-    color: rgb(255, 201, 8)
+    color: rgb(255, 201, 8);
+}
+
+.nav-top-link {
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+    font-family: 'Open sans';
+}
+
+.nav-top-link:visited {
+    text-decoration: none;
+}
+
+.nav-top-link:hover {
+    color: rgb(255, 201, 8);
 }
 
 .header-line {
@@ -114,16 +131,14 @@ label {
 
 }
 
-
-
-// #black-layer {
-//     background-color: black;
-//     opacity: 0.7;
-// }
-
 .white-font {
     color: white;
 }
+
+#map {
+    height: 28rem; 
+    width: 100%;  
+   }
 
 // for tests
 

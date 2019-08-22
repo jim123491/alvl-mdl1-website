@@ -9,6 +9,7 @@ $lettSpace: 3px;
     -webkit-user-select: none; 
     -moz-user-select: none; 
     -ms-user-select: none;
+    cursor: pointer;
     letter-spacing: $lettSpace;
 }
 
@@ -24,19 +25,89 @@ a:visited {
     text-decoration: none;
 }
 
+label {
+    display:none;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.yellow-button {
+    @include button (0px);
+    background-color: rgb(255, 201, 8);
+}
+
+.triangle-tr {
+    border: 1rem solid transparent;	
+    border-top: 1rem solid red; 
+    border-right: 1rem solid red;
+}
+
+.triangle-br {
+    border: 1rem solid transparent;	
+    border-bottom: 1rem solid red; 
+    border-right: 1rem solid red;
+}
+
+.triangle-bl {
+    border: 1rem solid transparent;	
+    border-bottom: 1rem solid red; 
+    border-left: 1rem solid red;
+}
+
+.white-font {
+    color: white
+}
+
+.helvetica {
+    font-family: 'Open Sans'
+}
+
+.miryad {
+    font-family: 'PT Sans'
+}
+
+.bank-gothic {
+    font-family: 'Aldrich'
+}
+
+.zurich {
+    font-family: 'Montserrat'
+}
+
+
+
+// HEADER
+.fa-search {
+    right: 12%;
+    top: .7rem;
+    color: rgb(87, 92, 92);
+    cursor: pointer;
+}
+
 #top-search {
-    border: none;
+    border: 2px solid white;
     font-family: "Merriweather";
     color: rgb(168, 174, 174); 
     font-style: italic;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
 }
 
-#top-search ~ .fa {
-    color: rgb(87, 92, 92);
+#top-search:hover {
+    border-color: black;
+    outline: 0;
 }
 
-label {
-    display:none;
+#top-search:active {
+    outline: 0;
+}
+
+#top-search:focus {
+    outline: 0;
+    border-color: rgb(168, 174, 174); 
 }
 
 .subscribe-button {
@@ -56,7 +127,7 @@ label {
 
 .subscribe-button:active {
     color: white;
-    background-color: rgb(36, 41, 41);
+    background-color: rgb(100, 107, 107);
 }
 
 .connection {
@@ -94,6 +165,8 @@ label {
     min-height: 4rem;
 }
 
+
+// MAIN
 #eclipse {
     background: url(../images/image.png) no-repeat;
     background-size: cover;
@@ -120,19 +193,6 @@ label {
     border:  rgb(226, 23, 18);
     color: rgb(226, 23, 18);
 
-}
-
-.yellow-button {
-    @include button (0px);
-    background-color: rgb(255, 201, 8);
-}
-
-.yellow-button:hover {
-
-}
-
-.white-font {
-    color: white;
 }
 
 #map {

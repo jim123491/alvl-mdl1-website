@@ -1,4 +1,4 @@
-@import "../../bootsrtap-grid/bootstrap-grid";
+@import "../../bootstrap-grid/bootstrap-grid";
 
 $lettSpace: 3px;
 
@@ -33,9 +33,23 @@ label {
     position: absolute;
 }
 
+.relative {
+    position: relative;
+}
+
 .yellow-button {
     @include button (0px);
     background-color: rgb(255, 201, 8);
+    border: 3px solid rgb(255, 201, 8);
+}
+
+.yellow-button:hover {
+    border: 3px solid black;
+}
+
+.yellow-button:active {
+    color: white;
+    background-color: rgb(100, 107, 107);
 }
 
 .triangle-tr {
@@ -58,6 +72,10 @@ label {
 
 .white-font {
     color: white
+}
+
+.yellow-font {
+    color: rgb(255, 201, 8);
 }
 
 .helvetica {
@@ -137,7 +155,6 @@ label {
 
 .subscribe-button:hover {
     color: black;
-    font-weight: bolder;
     border: 3px solid black;
 }
 
@@ -151,22 +168,22 @@ label {
 }
 
 .connection:hover {
-    font-weight: bolder;
     color: rgb(255, 201, 8);
 }
 
-.nav-top-link {
+.connection:hover i{
+    color: rgb(255, 201, 8);
+    font-weight: bolder;
+}
+// check on color and font-famoiloy
+.nav-link {
     font-weight: bold;
     color: black;
     letter-spacing: 1px;
     font-family: 'Open sans';
 }
 
-.nav-top-link:visited {
-    text-decoration: none;
-}
-
-.nav-top-link:hover {
+.nav-link:hover {
     color: rgb(255, 201, 8);
 }
 
@@ -216,6 +233,43 @@ label {
     width: 100%;  
    }
 
+
+
+// FOOTER
+.grey-back {
+    background-color: rgb(115, 115, 115);
+}
+
+.footer-line {
+    width: 60%;
+    background-color: #e9e9e9;
+    opacity: 0.3;
+    height: 1px;
+    border: 0;
+}
+
+.credits {
+    font-weight: bolder;
+    color: rgb(100, 90, 90);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+}
+// not centered
+.button-up {
+    left: 50%;
+    bottom: -2rem;
+    width: 5rem;
+    height: 4rem;
+    background-color: white;
+    @include button(0px);
+}
+// add font-size center add triangles
+.button-up a {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
 // for tests
 
 

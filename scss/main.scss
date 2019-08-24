@@ -1,15 +1,12 @@
-@import "../../bootstrap-grid/bootstrap-grid";
+@import "../../bootsrtap-grid/bootstrap-grid";
 
 $lettSpace: 3px;
 
 @mixin button ($lettSpace){
     text-transform: uppercase;
     font-weight: bold;
-    user-select: none; 
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none;
     cursor: pointer;
+    transition: 0.3s all;
     letter-spacing: $lettSpace;
 }
 
@@ -18,11 +15,89 @@ $lettSpace: 3px;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    transition: 0.3s all;
+    // transition: 0.3s all;
 }
+body {
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+input {
+    user-select: all; 
+    -webkit-user-select: all; 
+    -moz-user-select: all; 
+    -ms-user-select: all;
+}
+
+input:hover {
+    outline: 0;
+}
+
+input:active {
+    outline: 0;
+}
+
+input:focus {
+    outline: 0;
+}
+
+// #top-search {
+//     border: 2px solid white;
+//     font-family: "Merriweather";
+//     color: rgb(168, 174, 174); 
+//     font-style: italic;
+//     border-radius: 20px;
+//     width: 100%;
+//     padding: 0.5rem 1.5rem;
+// }
+
+// #top-search:hover {
+//     border-color: black;
+//     outline: 0;
+// }
+
+// #top-search:active {
+//     outline: 0;
+// }
+
+// #top-search:focus {
+//     outline: 0;
+//     border-color: rgb(168, 174, 174); 
+// }
+
+// #subs-email {
+//     color: rgb(168, 174, 174);
+//     font-style: italic;
+//     font-family: "Merriweather";
+//     width: 100%;
+//     padding: 0.5rem 1.5rem;
+//     text-align: center;
+//     border: 2px solid white;
+//     border-bottom-color: rgb(36, 41, 41); 
+//     font-weight: 900;
+// }
+
+// #subs-email:hover {
+//     outline: 0;
+//     font-weight: 500;
+// }
+
+// #subs-email:active {
+//     outline: 0;
+//     font-weight: 500;
+// }
+
+// #subs-email:focus {
+//     outline: 0;
+//     border: 2px solid rgb(169, 179, 227); 
+//     font-weight: 500;
+// }
 
 a:visited {
     text-decoration: none;
+    color: black;
 }
 
 label {
@@ -39,6 +114,8 @@ label {
 
 .yellow-button {
     @include button (0px);
+    max-height: 2.3rem;
+    max-width: 10rem;
     background-color: rgb(255, 201, 8);
     border: 3px solid rgb(255, 201, 8);
 }
@@ -53,21 +130,49 @@ label {
 }
 
 .triangle-tr {
-    border: 1rem solid transparent;	
-    border-top: 1rem solid red; 
-    border-right: 1rem solid red;
+    border: 0.5rem solid transparent;	
+    border-top: 0.5rem solid red; 
+    border-right: 0.5rem solid red;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.triangle-tl {
+    border: 0.5rem solid transparent;	
+    border-top: 0.5rem solid black; 
+    border-right: 0.5rem solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.yellow-button:hover .triangle-tl {
+    border-top: 0.5rem solid red;
+    border-right: 0.5rem solid red;
+}
+
+.yellow-button:active .triangle-tl {
+    border-top: 0.5rem solid white;
+    border-right: 0.5rem solid white;
 }
 
 .triangle-br {
-    border: 1rem solid transparent;	
-    border-bottom: 1rem solid red; 
-    border-right: 1rem solid red;
+    border: 0.4rem solid transparent;	
+    border-bottom: 0.4rem solid red; 
+    border-right: 0.4rem solid red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .triangle-bl {
-    border: 1rem solid transparent;	
-    border-bottom: 1rem solid red; 
-    border-left: 1rem solid red;
+    border: 0.4rem solid transparent;	
+    border-bottom: 0.4rem solid red; 
+    border-left: 0.4rem solid red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .white-font {
@@ -76,6 +181,19 @@ label {
 
 .yellow-font {
     color: rgb(255, 201, 8);
+}
+
+.grey-font {
+    color: rgb(87, 92, 92)
+}
+
+.light-grey-font {
+color: rgb(155, 160, 160)
+}
+
+.let-sp-2 {
+    letter-spacing: 2px;
+    text-align: justify;
 }
 
 .helvetica {
@@ -110,7 +228,78 @@ label {
     font-family: 'Dosis'
 }
 
+.fs-1 {
+    font-size: 0.8rem
+}
 
+.fs-2 {
+    font-size: 1rem
+}
+
+.fs-3 {
+    font-size: 1.2rem
+}
+
+.fs-4 {
+    font-size: 1.4rem
+}
+
+.fs-5 {
+    font-size: 1.8rem
+}
+
+.fs-6 {
+    font-size: 2.5rem
+}
+
+.lsp-1 {
+    letter-spacing: 0px
+}
+
+.lsp-2 {
+    letter-spacing: 1px
+}
+
+.lsp-3 {
+    letter-spacing: 2px
+}
+
+.lsp-4 {
+    letter-spacing: 4px
+}
+
+.lsp-5 {
+    letter-spacing: 8px
+}
+
+.f-bold {
+    font-weight: bold
+}
+
+.f-bolder {
+    font-weight: bolder
+}
+
+.shadowed {
+    box-shadow: 0px 0.9rem 1rem 0.12rem rgba(0, 0, 0, 0.33);
+}
+
+.edging {
+    position: absolute;
+    border: 2px solid lightblue; 
+    border-bottom: none;
+    width: 70%;
+    height: 20%;
+    top: 3rem;
+    left: 15%;
+    z-index: 1;
+}
+
+.over-edge {
+    position: relative;
+    background-color: white;
+    z-index: 10
+}
 
 // HEADER
 .fa-search {
@@ -148,6 +337,7 @@ label {
     border: 1px solid #E9E9E9;
     border-radius: 2px;
     min-height: 2rem;
+    max-width: 11rem;
     font-family: "Dosis";
     color: rgb(36, 41, 41);  
     @include button (3px)
@@ -200,20 +390,27 @@ label {
 
 
 // MAIN
+// Eclipse
 #eclipse {
     background: url(../images/image.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-position-y: -4rem;
-    min-height: 40rem;
+    min-height: 60rem;
+    box-shadow: 0px 0.8rem 1.5rem 0.15rem rgba(0, 0, 0, 0.19);
 }
 
 .angle-button {
     background-color: black;
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.angle-button i {
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
 .angle-button:hover {
@@ -225,15 +422,94 @@ label {
     background-color: white;
     border:  rgb(226, 23, 18);
     color: rgb(226, 23, 18);
-
 }
 
+.circle {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    cursor: pointer;
+}
+
+.circle:hover {
+    background-color: black;
+}
+
+.circle:active {
+    background-color: red;
+}
+
+// SIDEBAR
+
 #map {
-    height: 28rem; 
+    height: 45rem; 
     width: 100%;  
-   }
+}
 
+#about-me p {
+    text-align: center;
+}
 
+#subs-email {
+    color: rgb(168, 174, 174);
+    font-style: italic;
+    font-family: "Merriweather";
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    border: 2px solid white;
+    border-bottom-color: rgb(36, 41, 41); 
+    font-weight: 900;
+}
+
+#subs-email:hover {
+    outline: 0;
+    font-weight: 500;
+}
+
+#subs-email:active {
+    outline: 0;
+    font-weight: 500;
+}
+
+#subs-email:focus {
+    outline: 0;
+    border: 2px solid rgb(169, 179, 227); 
+    font-weight: 500;
+}
+
+.sign-up-button {
+    @include button(5px);
+    width: 100%;
+    background-color: rgb(169, 179, 227);
+    border: 2px solid rgb(169, 179, 227);
+}
+
+.sign-up-button:hover {
+    background-color: rgb(94, 117, 228);
+    border-color: rgb(94, 117, 228);
+}
+
+.sign-up-button:active {
+    color: rgb(94, 117, 228);
+    background-color: white;
+    border-color: rgb(94, 117, 228);
+}
+
+#categories hr {
+    width: 75%;
+}
+
+.yellow-border {
+    border: 3px solid rgb(255, 201, 8);
+}
 
 // FOOTER
 .grey-back {
